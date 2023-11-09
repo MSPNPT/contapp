@@ -1,12 +1,321 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>
-        ALIMENTOS PARA GATOS
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de Bicicletas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 1em;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5em 1em;
+            border: none;
+            cursor: pointer;
+        }
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2em;
+        }
+
+        .team-member {
+            max-width: 300px;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            margin-bottom: 1em;
+        }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+        }
+
+        .service {
+            border: 1px solid #ccc;
+            padding: 1em;
+            border-radius: 5px;
+        }
+
+        .project {
+            border: 1px solid #ccc;
+            padding: 1em;
+            border-radius: 5px;
+            margin-bottom: 2em;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .reviews {
+            display: flex;
+            justify-content: space-between;
+            gap: 2em;
+        }
+
+        .review {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 1em;
+            border-radius: 5px;
+        }
+
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+        }
+
+        .blog-post {
+            border: 1px solid #ccc;
+            padding: 1em;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>somos una empresa dedicada al cuidar de las mascotas del hogar</h1>
-    <p>nuestros productos son cuidadosamente formulados para mascotas, brindando la calidad que usted busca para su engreído</p>
+
+    <!-- Inicio -->
+    <header>
+        <h1>Taller de Bicicletas</h1>
+        <p>Tu destino para reparación, mantenimiento y personalización de bicicletas.</p>
+        <!-- Agrega un slider o imágenes destacadas aquí -->
+    </header>
+
+    <!-- Acerca de Nosotros -->
+    <section>
+        <h2>Acerca de Nosotros</h2>
+        <p>Nuestra historia inspiradora y nuestro compromiso con las bicicletas.</p>
+        <!-- Incluye imágenes del equipo -->
+        <div class="team-members">
+            <div class="team-member">
+                <img src="equipo1.jpg" alt="Miembro del Equipo 1">
+                <p>Nombre del Miembro - Especialidad</p>
+            </div>
+            <div class="team-member">
+                <img src="equipo2.jpg" alt="Miembro del Equipo 2">
+                <p>Nombre del Miembro - Especialidad</p>
+            </div>
+            <div class="team-member">
+                <img src="equipo3.jpg" alt="Miembro del Equipo 3">
+                <p>Nombre del Miembro - Especialidad</p>
+            </div>
+            <!-- Agrega más miembros del equipo -->
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section>
+        <h2>Nuestros Servicios</h2>
+        <div class="services-list">
+            <div class="service">
+                <h3>Reparación y Mantenimiento</h3>
+                <p>Ofrecemos servicios de reparación y mantenimiento de alta calidad para mantener tu bicicleta en perfecto estado.</p>
+            </div>
+            <div class="service">
+                <h3>Personalización de Bicicletas</h3>
+                <p>Crea una bicicleta única con nuestro servicio de personalización. ¡Haz que tu bicicleta refleje tu estilo!</p>
+            </div>
+            <div class="service">
+                <h3>Venta de Bicicletas</h3>
+                <p>Descubre nuestra selección de bicicletas de alta calidad para todas las edades y niveles.</p>
+            </div>
+            <!-- Agrega más servicios -->
+        </div>
+        <!-- Detalles y precios de los servicios -->
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section>
+        <h2>Proyectos Destacados</h2>
+        <div class="project">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto destacado. Destaca los logros y resultados obtenidos.</p>
+        </div>
+        <div class="project">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto destacado. Destaca los logros y resultados obtenidos.</p>
+        </div>
+        <!-- Agrega más proyectos destacados -->
+    </section>
+
+    <!-- Eventos y Talleres -->
+    <section>
+        <h2>Eventos y Talleres</h2>
+        <p>Descubre nuestros próximos eventos y talleres. Únete a la comunidad ciclista.</p>
+        <!-- Lista de eventos y talleres -->
+    </section>
+
+    <!-- Reseñas de Clientes -->
+    <section>
+        <h2>Reseñas de Clientes</h2>
+        <div class="reviews">
+            <div class="review">
+                <h3>Cliente 1</h3>
+                <p>Reseña del cliente y su experiencia con el taller. Agradecimiento y comentarios positivos.</p>
+            </div>
+            <div class="review">
+                <h3>Cliente 2</h3>
+                <p>Reseña del cliente y su experiencia con el taller. Agradecimiento y comentarios positivos.</p>
+            </div>
+        </div>
+        <!-- Agrega más reseñas -->
+    </section>
+
+    <!-- Galería -->
+    <section>
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="imagen1.jpg" alt="Imagen 1">
+            <img src="imagen2.jpg" alt="Imagen 2">
+            <img src="imagen3.jpg" alt="Imagen 3">
+            <img src="imagen4.jpg" alt="Imagen 4">
+            <!-- Agrega más imágenes -->
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section>
+        <h2>Blog</h2>
+        <div class="blog-posts">
+            <div class="blog-post">
+                <h3>Consejos para el Mantenimiento de Bicicletas</h3>
+                <p>Conoce los mejores consejos para mantener tu bicicleta en óptimas condiciones. Desde la limpieza hasta la lubricación.</p>
+            </div>
+            <div class="blog-post">
+                <h3>Últimas Tendencias en Personalización de Bicicletas</h3>
+                <p>Descubre las tendencias más actuales en la personalización de bicicletas. ¡Haz que tu bicicleta destaque!</p>
+            </div>
+            <!-- Agrega más publicaciones del blog -->
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <h2>Preguntas Frecuentes</h2>
+        <ul>
+            <li>
+                <strong>¿Cuánto tiempo lleva reparar una bicicleta?</strong>
+                <p>El tiempo varía según la complejidad, pero trabajamos para tenerlas listas lo más pronto posible.</p>
+            </li>
+            <li>
+                <strong>¿Ofrecen servicios de recogida y entrega?</strong>
+                <p>Sí, ofrecemos servicios de recogida y entrega a domicilio. Consulta las tarifas.</p>
+            </li>
+            <li>
+                <strong>¿Cuáles son los métodos de pago aceptados?</strong>
+                <p>Aceptamos efectivo, tarjetas de crédito y transferencias electrónicas.</p>
+            </li>
+            <!-- Agrega más preguntas frecuentes -->
+        </ul>
+    </section>
+
+    <!-- Contáctenos -->
+    <section>
+        <h2>Contáctenos</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Taller de Bicicletas</p>
+    </footer>
+
 </body>
 </html>
