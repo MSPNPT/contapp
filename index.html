@@ -1,349 +1,116 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIX SHOP BIKE</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
+
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .hero {
+            background-color: #40E0D0; /* Fondo en verde */ center/cover;
+            height: 300px;
+            color: #000000;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            line-height: 1.6;
-            background-color: #f8f8f8;
-            color: #333;
         }
-
-        header {
-            background-color: #ff7f00;
-            color: #fff;
+        .section {
+            padding: 2rem;
+            background-color: #ffffff;
+            margin-bottom: 1rem;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .footer {
+            background-color: #003366;
+            color: #ffffff;
             text-align: center;
-            padding: 1em 0;
-        }
-
-        section {
-            padding: 2em;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 2em 0;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        h2, h3 {
-            color: #ff7f00;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 1em;
-        }
-
-        p {
-            margin-bottom: 1.5em;
-            color: #555;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 0.5em;
-            color: #333;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 0.5em;
-            margin-bottom: 1em;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-
-        button {
-            background-color: #92df00;
-            color: #fff;
-            padding: 0.5em 1em;
-            border: none;
-            cursor: pointer;
-            border-radius: 3px;
-        }
-
-        .team-members {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 2em;
-        }
-
-        .team-member {
-            max-width: 300px;
-            text-align: center;
-            margin-bottom: 2em;
-        }
-
-        .team-member img {
-            border-radius: 50%;
-            margin-bottom: 1em;
-        }
-
-        .services-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2em;
-        }
-
-        .service {
-            border: 1px solid #ccc;
-            padding: 1em;
-            border-radius: 5px;
-        }
-
-        .project {
-            border: 1px solid #ccc;
-            padding: 1em;
-            border-radius: 5px;
-            margin-bottom: 2em;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1em;
-        }
-
-        .gallery img {
-            width: 100%;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.1);
-        }
-
-        .reviews {
-            display: flex;
-            justify-content: space-between;
-            gap: 2em;
-        }
-
-        .review {
-            flex: 1;
-            border: 1px solid #ccc;
-            padding: 1em;
-            border-radius: 5px;
-        }
-
-        .blog-posts {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2em;
-        }
-
-        .blog-post {
-            border: 1px solid #ccc;
-            padding: 1em;
-            border-radius: 5px;
+            padding: 1rem;
         }
     </style>
 </head>
 <body>
-
-    <!-- Inicio -->
     <header>
-        <h1>FIX   SHOP   BIKE</h1>
-        <p>Tu destino para reparación, mantenimiento y personalización de bicicletas.</p>
-        <!-- Agrega un slider o imágenes destacadas aquí -->
+        <h1>TEAM CONTABLE</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">INICIO</a></li>
+                <li><a href="#about">NOTICIAS</a></li>
+                <li><a href="#services">SERVICIOS</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+                <li><a href="#facturacion">FACTURACIÓN</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Acerca de Nosotros -->
-    <section>
-        <h2>Acerca de Nosotros</h2>
-        <p>Nuestra historia inspiradora y nuestro compromiso con las bicicletas.</p>
-        <!-- Incluye imágenes del equipo -->
-        <div class="team-members">
-            <div class="team-member">
-                <img src="https://bnz05pap001files.storage.live.com/y4mlEtB1BYb4ft63TPqLwNWlQPYvWsMUw37pi8-b6bnSAYETllWhbhPx7S0tVfs52Ln9W9WbTjbb8q4v76fc7g-66D8Z6cO66o1eHa3CJ8zu4J060CINBHT-xOFV7LbOoGimO2PTXo5M3DUOopAJ87j0LAPFnBPbrE-LpgEsBDujbAm4sSb4dLWUjRrj4JHPfdb3ql2xZd8O8CYciFWToHwbi9G83zwX8kRU0w_sWnthRQ?encodeFailures=1&width=817&height=613" alt="Miembro del Equipo 1" width="200" height="200">
-                <p>Percy Perez - Gerente General</p>
-            </div>
-            <div class="team-member">
-                <img src="https://bnz05pap001files.storage.live.com/y4miMdmxYKQDd9vlMyXV2auBFD9wy5UYTUruLOJgpRQ9Zs1jD-KSqwoFYA72RdH8kQMZ66DoTV4uZ9IVLzrCRaImjfLP_72WUgLHf0ubZSeU2LsEVWeizjNgFycpVj1P5xvx58OWfIVpyct7zL4POQMNN3THAfeNoUDpT_Blpyit-EtiqTqxGs1-twT5J3MQb3RjvYR6lym3GQExhJkjxjrEjQ_cDSwPNLyYfVIZfGdV-M?encodeFailures=1&width=844&height=613" alt="Miembro del Equipo 2" width="200" height="200">
-                <p>Ronaldo Espinoza - Mecanico</p>
-            </div>
-            <div class="team-member">
-                <img src="https://bnz05pap001files.storage.live.com/y4mwXvZ65ulI66eE-ToS7WwV-YUqgqV2bO-30yGRIuQkihpM48w8v_alus9zTdU3zhIBZkL_cvo94-TNqhv4R3AvFP-EZIYpcn_mo-z9J9quUIkfSitBTLgcuAg5ATQTbzrmAqAxYMJACDRkANCCxuTx7k17-RUORi0t49AHwE0mD9Mkh4Mo6Bp-rAjCbHWWgq8KUGZoAdlBwbs1vDyrVRzdj13cx03jYudfuwu9yzefyM?encodeFailures=1&width=626&height=418" alt="Miembro del Equipo 3" width="200" height="200">
-                <p>Atonio Escalante - Ayudante</p>
-            </div>
-            <!-- Agrega más miembros del equipo -->
-        </div>
-    </section>
+    <div class="hero">
+        <h1>ASESORIA Y CONSULTURIA TEAM CONTABLE</h1>
+        <I1><img src="https://cdn.www.gob.pe/uploads/document/file/6209023/939519-remate-2.jpg" width="300"</I1>
+    </div>
 
-    <!-- Servicios -->
-    <section>
-        <h2>Nuestros Servicios</h2>
-        <div class="services-list">
-            <div class="service">
-                <h3>Reparación y Mantenimiento</h3>
-                <p>Mantenimiento completo</p>
-                <p>Mantenimiento mediano</p>
-                <p>Mantenimiento ligero</p>
-            </div>
-            <div class="service">
-                <h3>Personalización de Bicicletas</h3>
-                <p>Pintado completo de bicicleta</p>
-                <p>Pintado por piezas de bicicleta</p>
-            </div>
-            <div class="service">
-                <h3>Venta y alquiler de Bicicletas</h3>
-                <p>Venta de bicicletas nuevas y de segundas en buen estado bicicletas aro "24, 26, 27.5, 29"</p>
-                <p>Alquiler de bicicletas aro "24, 26, 27.5, 29"</p>
-               
-            </div>
-            <!-- Agrega más servicios -->
-        </div>
-        <!-- Detalles y precios de los servicios -->
-    </section>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>BIENVENIDO A TEAM CONTABLE</h2>
+            <p>Somos un equipo que busca asesorar a los empresarios de las micro, pequequeñas, medianas y grandes empresas del PERÚ </p>
+        </section>
 
-    <!-- Proyectos Destacados -->
-    <section>
-        <h2>Proyectos Destacados</h2>
-        <div class="project">
-            <h3>¡Transformación mágica de una bicicleta Veloz a una Trek de ensueño!</h3>
-            <p>Imagina el viaje de una bicicleta Veloz que se somete a una metamorfosis completa hasta convertirse en una obra maestra de la marca Trek. Este proceso meticuloso comenzó desmontando la bicicleta hasta el último tornillo. Cada detalle fue tratado con el máximo cuidado y atención.
+        <section id="about" class="section">
+            <h2>NOTICIAS</h2>
+            <li>SIRE</li>
+            <a href="https://www.gob.pe/institucion/sunat/noticias/872986-sunat-facilita-uso-del-sistema-integrado-de-registros-electronicos-sire">
+            <I1><img src="https://cdn.www.gob.pe/uploads/document/file/5486997/872986-sire-1.jpg" width="200"</I1>
+            </a>
+            <h2> </h2>
+            <li>PADRON DE CONTRIBUYENTES EN COBRANZA COACTIVA</li>
+            <a href="https://www.sunat.gob.pe/padronesnotificaciones/listaContrib-mayorDeudaExigible-CC.html">
+            <I1><img src="https://www.sunat.gob.pe/img/campanas/2024/c-listaIPCN-cc.jpg" width="200"</I1>
+            </a>
 
-Primero, se llevó a cabo un delicado lijado para preparar el lienzo de aluminio. Luego, se aplicó una base especial, creada específicamente para resaltar la elegancia de los marcos de aluminio, brindando una superficie perfecta para la transformación. La bicicleta fue pintada con un cautivador tono negro que no solo refleja elegancia, sino que también resalta su robustez.
+        <section id="services" class="section">
+            <h2>SERVICIOS</h2>
+            <ul>
+                <li>Contabilidad de empresas</li>
+                <li>Asesoria de empresas</li>
+                <li>Regularizacion de contabilidad</li>
+                <li>Emision de comprobantes</li>
+            </ul>
+        </section>
+        <section id="facturacion" class="section">
+            <h2>FACTURACIÓN</h2>
+            <ul>
+                <li>Factura electronica</li>
+                <li>Boleta Electronica</li>
+                <li>Recibo por honorario</li>
+                <li>Nota de credito</li>
+            </ul>
+        </section>
+        <section id="contact" class="section">
+            <h2>CONTACTO</h2>
+            <p>Para consultas o reservas, no dudes en contactarnos:</p>
+            <p><strong>Celular:</strong> </p> +51 955374354
+            <p><strong>Facebook:</strong> Team contable</p>
+        </section>
+    </div>
 
-Para darle un toque auténtico de Trek, cuidadosamente se colocaron stickers de la marca, asegurando que cada detalle coincidiera con la perfección que caracteriza a estas bicicletas icónicas. Después de esta fase creativa, la bicicleta fue sometida a un proceso de laqueado que selló la transformación y la dejó impecable, como si hubiera salido directamente de fábrica.</p>
-        </div>
-        <div class="project">
-            <h3>¡La metamorfosis de una bicicleta de hierro oxidada a una Specialized resplandeciente en rojo!</h3>
-            <p>El resultado es una bicicleta que ha dejado atrás su pasado oxidado para abrazar el estatus de una Specialized en un resplandeciente rojo. Esta transformación no solo es estética, sino que también representa una renovación completa del espíritu y la función de la bicicleta.</p>
-        </div>
-        <!-- Agrega más proyectos destacados -->
-    </section>
-
-    <!-- Eventos y Talleres -->
-    <section>
-        <h2>Eventos y Talleres</h2>
-        <p>Descubre nuestros próximos eventos y talleres.</p>
-        <!-- Lista de eventos y talleres -->
-    </section>
-
-    <!-- Reseñas de Clientes -->
-    <section>
-        <h2>Reseñas de Clientes</h2>
-        <div class="reviews">
-            <div class="review">
-                <h3>Cristian Rodriguez</h3>
-                <p>¡Mi experiencia en este taller de bicicletas fue simplemente excepcional! Desde el momento en que entré, me recibieron con una calidez y entusiasmo que solo se iguala a la calidad de su trabajo.</p>
-            </div>
-            <div class="review">
-                <h3>Javier Castillo</h3>
-                <p>El proceso de personalización fue un verdadero punto destacado. Cada detalle, desde el color del cuadro hasta la elección de los componentes, fue discutido y decidido juntos. Se tomaron el tiempo para entender mis necesidades y preferencias, creando así una bicicleta que no solo se adapta perfectamente a mi estilo, sino que también supera mis expectativas en rendimiento.</p>
-            </div>
-        </div>
-        <!-- Agrega más reseñas -->
-    </section>
-
-    <!-- Galería -->
-    <section>
-        <h2>Galería</h2>
-        <div class="gallery">
-            <img src="https://bnz05pap001files.storage.live.com/y4mdOfHiih4b5dL_oGC23pOEahzsnsE4iWsB946VuY9aj8Psf9Q60r82fm-iDfU0naKFDEJzFezXGKQy6Nydx-bzTiHTUjun8i9ToeSQ4jo_4kvvsfTKWH9RPq8F7RK9G3bIoeKbt0LwWomjuWVQjHSa5hlXVEcT7TJ0vOaCW6bNsKeqhXsWa8fzxlLeM-nLlBr9jsEdBLT3Y0TYNejZQr2SxiPmNakFjS0LpEHMGjQZ18?encodeFailures=1&width=500&height=382" alt="Imagen 1">
-            <img src="https://bnz05pap001files.storage.live.com/y4ms2-rcP-khoTrp3_TKiVknmO7aNDx4UsJABuf_-bjNUNVUmX1A627mUS_JroCwgrb2ML8SzspoIb78ojw5D5zY6xnr2y-AooatYb_vDYiF7V1GRh1GUxBzbxVUH4yAfYQjs9thZBX3mMwW1J2T8MCKRdV9EzxfxJtsJLnhc5KaQ7V7xbxRIDBnuwHE9ixIAMl6yOWDwj2aURI1wNycT6TpY3TrUja0OaCgbCFukjMbE0?encodeFailures=1&width=400&height=400" alt="Imagen 2">
-            <img src="https://bnz05pap001files.storage.live.com/y4mZbWmmQGt5xD918XF1ntDvpwqGaSN0LqnGa7109bVbMc0crL9OeNUYEUeLUjPLgIaZJXehf2kXPcMevi2Wb1SNPnqYvVQCOvqzflYy8xaJvhOY9WQwtn2Jtol1DK3dwUxSE61lYL9NEr9Jj1Xj_TJz18GhWD0Y7j9RY7LiocxPFG7UcZVW5R_WRxfP7xShXK86aSdomYtfto5EQWFjqQglOo1lROFZCVn-NOh3f86PG8?encodeFailures=1&width=613&height=613" alt="Imagen 3">
-            <img src="https://bnz05pap001files.storage.live.com/y4mYI06mzXEmkewiHTQ1r2g2X4KSsLBYdv38Wo1scspYP6DGVybCZQSHvUtmWDXkr5Kp9xlzJNcHiBi-73unhlt3RHa_E7HFmuFUhNs2pddxb5XCZ06xavuXWe2sBtXQ4zpnWgMa1xNGbGcgkGkDCbVm7CLjYSs-Cwg-N1aT6UuvT3n6_4aLTwv9CHLYHtMOLfpl2N64NzCBtgs5xklA2py0DSea-Vzl0cH_vEOiybFzVU?encodeFailures=1&width=613&height=613" alt="Imagen 4">
-            <!-- Agrega más imágenes -->
-        </div>
-    </section>
-
-    <!-- Blog -->
-    <section>
-        <h2>Blog</h2>
-        <div class="blog-posts">
-            <div class="blog-post">
-                <h3>Consejos para el Mantenimiento de Bicicletas</h3>
-                <p>- Conoce los mejores consejos para mantener tu bicicleta en óptimas condiciones. Desde la limpieza hasta la lubricación.</p>
-                <p>- Limpia tu bicicleta después de cada paseo, especialmente si has rodado en condiciones de lluvia o barro. Un paño suave y agua con jabón suave son suficientes para mantenerla reluciente.</p>
-                <p>- Lubrica la cadena regularmente para evitar la corrosión y reducir el desgaste. Usa un lubricante específico para cadenas de bicicleta y límpiala antes de aplicar una nueva capa.</p>
-                <p>- Mantén la presión de los neumáticos dentro del rango recomendado. Neumáticos bien inflados no solo mejoran el rendimiento, sino que también evitan pinchazos.</p>
-                <p>- Verifica regularmente el estado de las pastillas y ajusta los frenos según sea necesario. Asegúrate de que las manetas de freno respondan correctamente y que no haya holgura.</p>
-                <p>- Guarda tu bicicleta en un lugar seco y seguro. Si es posible, cúbrela para protegerla del polvo y la humedad.</p>
-                <p>- Programa revisiones regulares en un taller de bicicletas profesional. Un mecánico puede identificar problemas potenciales y realizar ajustes especializados.</p>
-            </div>
-            <div class="blog-post">
-                <h3>Partes de una bicicleta</h3>
-                <p>Las bicicletas tienen las siguientes partes:</p>
-                <img src="https://dsm01pap004files.storage.live.com/y4mChoejVzwGsFgt5VCUxtAz6HLtOEqXVEI0LnU3-K2DjE3b0f7-NPEaYOODs14ICimj6-kMdEztGZU9KqbI1tY8se20Bj69alc-vqaEUvQvZcBNWRSjREl_hAe4wPouWUbMk_ylymNw-js3lGiNr2ryCUUlLzAaO0zs5erqNZTfY_DQfi6Xp9YVhFxb5shkIRFVEA1hVATwMit4qD1CJ1tTw_eoi_oJjj6Pgv0YkhLsPo?encodeFailures=1&width=744&height=498" alt="Imagen 1" width="550" height="550">
-            </div>
-            <!-- Agrega más publicaciones del blog -->
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section>
-        <h2>Preguntas Frecuentes</h2>
-        <ul>
-            <li>
-                <strong>¿Cuánto tiempo lleva reparar una bicicleta?</strong>
-                <p>El tiempo varía según la complejidad, pero trabajamos para tenerlas listas lo más pronto posible.</p>
-            </li>
-            <li>
-                <strong>¿Ofrecen servicios de recogida y entrega?</strong>
-                <p>Sí, ofrecemos servicios de recogida y entrega a domicilio. Sin costo</p>
-            </li>
-            <li>
-                <strong>¿Cuáles son los métodos de pago aceptados?</strong>
-                <p>Aceptamos efectivo, tarjetas de crédito y transferencias electrónicas.</p>
-            </li>
-            <!-- Agrega más preguntas frecuentes -->
-        </ul>
-    </section>
-
-    <!-- Contáctenos -->
-    <section>
-        <h2>Contáctenos</h2>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono">
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-            <button type="submit">Enviar Mensaje</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 Taller de Bicicletas</p>
+    <footer class="footer">
+        <p>&copy; 2024 Tean Contable. Todos los derechos reservados.</p>
     </footer>
-
 </body>
 </html>
-
