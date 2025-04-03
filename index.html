@@ -1,116 +1,82 @@
-
-            padding: 1rem;
-            text-align: center;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Estudio Contable</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/addons/"
+            }
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        .container {
-            padding: 2rem;
-        }
-        .hero {
-            background-color: #40E0D0; /* Fondo en verde */ center/cover;
-            height: 300px;
-            color: #000000;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        .section {
-            padding: 2rem;
-            background-color: #ffffff;
-            margin-bottom: 1rem;
-        }
-        .section h2 {
-            margin-top: 0;
-        }
-        .footer {
-            background-color: #003366;
-            color: #ffffff;
-            text-align: center;
-            padding: 1rem;
-        }
-    </style>
+    </script>
 </head>
 <body>
     <header>
-        <h1>TEAM CONTABLE</h1>
+        <h1>Tu Estudio Contable</h1>
         <nav>
             <ul>
-                <li><a href="#home">INICIO</a></li>
-                <li><a href="#about">NOTICIAS</a></li>
-                <li><a href="#services">SERVICIOS</a></li>
-                <li><a href="#contact">CONTACTO</a></li>
-                <li><a href="#facturacion">FACTURACIÓN</a></li>
+                <li><a href="#" data-section="inicio">Inicio</a></li>
+                <li><a href="#" data-section="servicios">Servicios</a></li>
+                <li><a href="#" data-section="nosotros">Nosotros</a></li>
+                <li><a href="#" data-section="contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="hero">
-        <h1>ASESORIA Y CONSULTURIA TEAM CONTABLE</h1>
-        <I1><img src="https://cdn.www.gob.pe/uploads/document/file/6209023/939519-remate-2.jpg" width="300"</I1>
-    </div>
-
-    <div class="container">
-        <section id="home" class="section">
-            <h2>BIENVENIDO A TEAM CONTABLE</h2>
-            <p>Somos un equipo que busca asesorar a los empresarios de las micro, pequequeñas, medianas y grandes empresas del PERÚ </p>
+    <main>
+        <section id="inicio" class="active">
+            <h2>Bienvenido</h2>
+            <p>Ofrecemos soluciones contables integrales para tu negocio.</p>
+            <div id="three-container"></div>
         </section>
 
-        <section id="about" class="section">
-            <h2>NOTICIAS</h2>
-            <li>SIRE</li>
-            <a href="https://www.gob.pe/institucion/sunat/noticias/872986-sunat-facilita-uso-del-sistema-integrado-de-registros-electronicos-sire">
-            <I1><img src="https://cdn.www.gob.pe/uploads/document/file/5486997/872986-sire-1.jpg" width="200"</I1>
-            </a>
-            <h2> </h2>
-            <li>PADRON DE CONTRIBUYENTES EN COBRANZA COACTIVA</li>
-            <a href="https://www.sunat.gob.pe/padronesnotificaciones/listaContrib-mayorDeudaExigible-CC.html">
-            <I1><img src="https://www.sunat.gob.pe/img/campanas/2024/c-listaIPCN-cc.jpg" width="200"</I1>
-            </a>
-
-        <section id="services" class="section">
-            <h2>SERVICIOS</h2>
+        <section id="servicios" class="hidden">
+            <h2>Nuestros Servicios</h2>
             <ul>
-                <li>Contabilidad de empresas</li>
-                <li>Asesoria de empresas</li>
-                <li>Regularizacion de contabilidad</li>
-                <li>Emision de comprobantes</li>
+                <li>Asesoría Contable Integral</li>
+                <li>Preparación y Presentación de Declaraciones Mensuales (IVA, Renta, etc.)</li>
+                <li>Auditoría Contable y Financiera</li>
+                <li>Consultoría Financiera y Tributaria</li>
+                <li>Planificación Fiscal</li>
+                <li>Outsourcing Contable</li>
+                <li>Elaboración de Estados Financieros</li>
             </ul>
+            <div class="service-images">
+                <img src="placeholder1.jpg" alt="Asesoría Contable" width="200">
+                <img src="placeholder2.jpg" alt="Declaraciones Mensuales" width="200">
+                <img src="placeholder3.jpg" alt="Auditoría" width="200">
+            </div>
         </section>
-        <section id="facturacion" class="section">
-            <h2>FACTURACIÓN</h2>
-            <ul>
-                <li>Factura electronica</li>
-                <li>Boleta Electronica</li>
-                <li>Recibo por honorario</li>
-                <li>Nota de credito</li>
-            </ul>
-        </section>
-        <section id="contact" class="section">
-            <h2>CONTACTO</h2>
-            <p>Para consultas o reservas, no dudes en contactarnos:</p>
-            <p><strong>Celular:</strong> </p> +51 955374354
-            <p><strong>Facebook:</strong> Team contable</p>
-        </section>
-    </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 Tean Contable. Todos los derechos reservados.</p>
+        <section id="nosotros" class="hidden">
+            <h2>Nosotros</h2>
+            <p>Somos un equipo de profesionales altamente capacitados.</p>
+            <img src="placeholder4.jpg" alt="Nuestro Equipo" width="300">
+        </section>
+
+        <section id="contacto" class="hidden">
+            <h2>Contacto</h2>
+            <p>Contáctanos para más información.</p>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+            <p>También puedes contactarnos directamente a través de WhatsApp: <a href="https://wa.me/51955374354" target="_blank">+51 955374354</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tu Estudio Contable</p>
     </footer>
 </body>
 </html>
